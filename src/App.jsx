@@ -16,7 +16,7 @@ function App() {
         {/* 🔹 Aquí va el mensaje con el prop */}
         <Route
           path="/mensaje"
-          element={<Message mensaje="Bienvenido a mi app con React 🚀" />}
+          element={<Message mensaje="Bienvenido a mi actividad, información de usuario enviada como props desde componente principal" />}
         />
       </Routes>
     </Router>
