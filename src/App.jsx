@@ -6,7 +6,7 @@ import UserDetail from "./pages/UserDetail";
 import Message from "./pages/Message";
 
 function App() {
-  const mensaje = "Bienvenido a mi actividad, este monsaje viene con props desde App.jsx";
+  const mensaje = "Bienvenido a mi actividad, este mensaje viene con props desde App.jsx";
 
   return (
     <Router>
