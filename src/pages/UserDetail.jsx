@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-function UserDetail() {
+export default function UserDetail() {
   const { id } = useParams();
   const [user, setUser] = useState(null);
 
@@ -11,16 +11,14 @@ function UserDetail() {
       .then((data) => setUser(data));
   }, [id]);
 
-  if (!user) return <p>Cargando...</p>;
+  if (!user) return <p>Cargando usuario...</p>;
 
   return (
-    <div>
-      <h2 className="text-xl font-bold">{user.name}</h2>
-      <p>Email: {user.email}</p>
-      <p>Teléfono: {user.phone}</p>
-      <p>Compañía: {user.company.name}</p>
+    <div className="p-6">
+      <h1 className="text-2xl font-bold">{user.name}</h1>
+      <p><strong>Email:</strong> {user.email}</p>
+      <p><strong>Teléfono:</strong> {user.phone}</p>
+      <p><strong>Empresa:</strong> {user.company.name}</p>
     </div>
   );
 }
-
-export default UserDetail;

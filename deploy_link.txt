@@ -1,0 +1,2 @@
+Repositorio: https://github.com/luispiper/react-rutas-parametros
+Despliegue: https://react-rutas-parametros.vercel.app

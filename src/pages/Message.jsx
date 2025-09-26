@@ -1,10 +1,8 @@
-function Message({ mensaje }) {
+export default function Message({ mensaje }) {
   return (
-    <div>
+    <div className="p-6">
       <h1 className="text-2xl font-bold">Mensaje</h1>
       <p>{mensaje}</p>
     </div>
   );
 }
-
-export default Message;

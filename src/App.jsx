@@ -6,19 +6,17 @@ import UserDetail from "./pages/UserDetail";
 import Message from "./pages/Message";
 
 function App() {
-  const mensaje = "Hola, este mensaje viene como props desde App.jsx";
+  const mensaje = "Bienvenido a mi actividad, este monsaje viene con props desde App.jsx";
 
   return (
     <Router>
       <Navbar />
-      <div className="p-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/about/:id" element={<UserDetail />} />
-          <Route path="/mensaje" element={<Message mensaje={mensaje} />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/user/:id" element={<UserDetail />} />
+        <Route path="/message" element={<Message mensaje={mensaje} />} />
+      </Routes>
     </Router>
   );
 }
