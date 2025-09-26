@@ -1,8 +1,10 @@
-export default function Message({ mensaje }) {
+const Message = ({ mensaje }) => {
   return (
     <div className="p-6 text-center">
-      <h1 className="text-4xl font-bold text-blue-600">{mensaje}</h1>
-      <p className="text-sm text-gray-500 mt-2">Mensaje dinámico desde App.jsx</p>
+      <h2 className="text-2xl font-bold mb-4">Mensaje</h2>
+      <p className="text-lg text-gray-700">{mensaje}</p>
     </div>
   );
-}
+};
+
+export default Message;

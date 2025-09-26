@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/user/:id" element={<UserDetail />} />
-        <Route path="/message" element={<Message mensaje={mensaje} />} />
+        <Route path="/mensaje" element={<Message mensaje="Hola, este es mi mensaje personalizado enviado por props 🚀" />} /
       </Routes>
     </Router>
   );
