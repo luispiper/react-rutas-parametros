@@ -6,8 +6,6 @@ import UserDetail from "./pages/UserDetail";
 import Message from "./pages/Message";
 
 function App() {
-  const mensaje = "Bienvenido a mi actividad, este mensaje viene con props desde App.jsx";
-
   return (
     <Router>
       <Navbar />
@@ -15,7 +13,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/user/:id" element={<UserDetail />} />
-        <Route path="/mensaje" element={<Message mensaje="Hola, este es mi mensaje personalizado enviado por props 🚀" />} /
+        {/* 🔹 Aquí va el mensaje con el prop */}
+        <Route
+          path="/mensaje"
+          element={<Message mensaje="Bienvenido a mi app con React 🚀" />}
+        />
       </Routes>
     </Router>
   );

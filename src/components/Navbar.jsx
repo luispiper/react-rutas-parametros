@@ -1,34 +1,13 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md py-4">
-      <div className="flex justify-center space-x-8">
-        <Link
-          to="/"
-          className="text-gray-700 hover:text-blue-600 transition font-medium"
-        >
-          Inicio
-        </Link>
-        <Link
-          to="/about"
-          className="text-gray-700 hover:text-blue-600 transition font-medium"
-        >
-          Quiénes somos
-        </Link>
-        <Link
-          to="/mensaje"
-          className="text-gray-700 hover:text-blue-600 transition font-medium"
-        >
-          Mensaje
-        </Link>
-        <Link
-          to="/about/123"
-          className="text-gray-700 hover:text-blue-600 transition font-medium"
-        >
-          Usuario 123
-        </Link>
-      </div>
+    <nav className="p-4 bg-gray-800 text-white flex justify-center space-x-6">
+      <Link to="/">Inicio</Link>
+      <Link to="/about">Quiénes somos</Link>
+      <Link to="/mensaje">Mensaje</Link>
     </nav>
   );
-}
+};
+
+export default Navbar;
